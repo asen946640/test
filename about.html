@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	    <title>主页</title>
+	    <!-- 引入layui css文件 -->
+	    <link rel="stylesheet" href="layui-v2.2.3/layui/css/layui.css">
+	    <!-- 自定义 css -->
+	    <link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+	<!-- Header -->
+	<div class="header">
+        <!-- 个性化标题 -->
+        <div class="mytitle">
+            <label>赌书消得泼茶香</label>
+        </div>
+        <!-- 导航栏 -->
+        <div class="mymenu-content">
+            <ul class="mymenu">
+                <li><a href="index.html">文章</a></li>
+                <li><a href="message.html">留言</a></li>
+                <li><a href="photos.html">相册</a></li>
+                <li><a href="">简介</a></li>
+                <li><a href="aihao.html">爱好</a></li>
+                <li><a href="movies.html">电影</a></li>
+                <li><a href="books.html">书籍</a></li>
+            </ul>
+        </div>
+        <!-- 隐藏功能 -->
+        <div class="other-functions">
+            <label>隐藏功能</label>
+        </div>
+        <!-- 搜索框 -->
+        <div class="query">
+            <input class="keyword" placeholder="搜索内容"/>
+            <i class="layui-icon" style="margin-right: 20px; font-size: 18px;">&#xe615;</i>
+        </div>
+    </div>
+    <!-- 个性签名 -->
+    <div class="my-sign">
+        <!--  包含标志和签名 -->
+        <div class="my-signImg">
+            <img id="my-signImg" src="img/my-sign.gif">
+            <div class="my-signWord">
+                <span class="my-signTitle" id="my-signTitle">匆匆时光</span>
+                <span class="my-signBody" id="my-signBody">I' am waiting for you here.</span>
+            </div>
+        </div>
+    </div>
+    <!-- Content -->
+    <div class="main-content" style="text-align: center;background-color: #FFFFFF;width: 85%;margin: auto;padding-top: 20px;">
+    	<!-- 相册面板 -->
+            <div class="blog-item" style="font-weight: 300;">
+				<fieldset class="layui-elem-field" style="text-align: left;">
+				  <legend>关于我</legend>
+				  <div class="layui-field-box" style="padding: 20px 100px;">
+	    			<div style="border: 1px solid #ede9e9;padding: 30px 30px;text-align: center;">
+	    				<img style="width: 92%;" src="img/35741744_31.jpg" />
+	    			</div>
+	    			<div class="about-myself">
+						<h2 style="font-weight: 300;margin: 20px 0px;">个人介绍</h2>
+						<p style="margin: 20px;line-height: 30px;">本人男，喜好前端,接触前端一年半。除此之外，诸多爱好。虽文不能治国，武不能安邦，但确实是好人一枚。<br>喜欢文学，唐诗宋词略懂皮毛。笔耕不辍，记些鸡毛蒜皮，市井小事。</p>
+						<p style="margin: 20px;line-height: 30px;">—Where is haha point?</p>
+					</div>
+					<div style="border: 1px solid #ede9e9;padding: 30px 30px;text-align: center;">
+						<img style="width: 92%;" src="img/38032151_48.jpg" />
+	    			</div>
+						<p style="margin: 20px 0px;line-height: 30px;">渔舟唱晚，家里的美景总是那么醉人心。<br>如果可以的话，我想就这样牵着你的手，回到家乡，一起去泛舟江上，当夜色降临，拉着你可以随着鸟儿的歌声一起附唱着，踩着余晖，归家温粥，与你共黄昏。</p>
+				  </div>
+				</fieldset>
+    		</div>
+    </div>
+    <script src="layui-v2.2.3/layui/layui.js"></script>
+    <!-- 引入jquery js -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- 自定义 js -->
+    <script src="js/index.js"></script>
+    <script>
+        $(function () {
+            //init
+            component.init();
+        });
+    </script>
+	</body>
+</html>

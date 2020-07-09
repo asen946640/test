@@ -18,8 +18,8 @@
         <!-- 导航栏 -->
         <div class="mymenu-content">
             <ul class="mymenu">
-                <li><a href="">文章</a></li>
-                <li><a href="message.html">留言</a></li>
+                <li><a href="index.html">文章</a></li>
+                <li><a href="">留言</a></li>
                 <li><a href="photos.html">相册</a></li>
                 <li><a href="about.html">简介</a></li>
                 <li><a href="aihao.html">爱好</a></li>
@@ -85,31 +85,58 @@
 	    </div>
         <!-- 主体显示部分 右面板 -->
         <div class="content-body">
-            <!-- 单个文章面板 -->
+            <!-- 留言板面板 -->
             <div class="blog-item">
-                <!-- 标题 -->
-                <p class="blog-title"><a href="simpleBlog.html">一个小和尚</a></p>
-                <!-- 作者以及时间 -->
-                <p class="blog-author">—— 钟龙  2020-04-20 12:36</p>
-                <img class="blog-img" src="img/pic01.jpg"/>
-                <!-- 概要 -->
-                <p class="blog-des">岁月荏苒，如梦似幻，人生只在呼吸之间而已。</p>
-                <p class="blog-tags">标签: 日记 / 人生感悟</p>
-            </div>
-            <!-- 单个文章面板 -->
-            <div class="blog-item">
-                <!-- 标题 -->
-                <p class="blog-title"><a href="simpleBlog1.html">桃之夭夭，灼灼其华</a></p>
-                <!-- 作者以及时间 -->
-                <p class="blog-author">—— 钟龙  2020-04-20 12:03</p>
-                <img class="blog-img" src="img/pic03.jpg"/>
-                <!-- 概要 -->
-                <p class="blog-des">犹如一支山寺桃花般惊艳的你就这样在我世界里静静地除绽着。</p>
-                <p class="blog-tags">标签: 日记 / 遇见你</p>
-            </div>
-        </div>
-        <hr class="my-line">
-    </div>
+				<fieldset class="layui-elem-field" style="text-align: left;">
+				  <legend>主人寄语</legend>
+				  <div class="layui-field-box" style="padding: 20px 100px;">
+				    	有什么话想对我说呢？
+				  </div>
+				</fieldset>
+                <!-- 留言 -->
+                <style>
+                	.layui-field-box span:hover{
+					    cursor: pointer;
+					    background-color: #FFFFFF;
+					    color: #000000;
+                	}
+                </style>
+				<fieldset class="layui-elem-field" style="text-align: left;">
+				  <legend>留言板 共2条留言</legend>
+				  <div class="layui-field-box" style="padding-top: 20px;padding-left: 60px;">
+				    	<!-- 留言内容 -->
+				    	<div class="message1" style="overflow: hidden;margin-top: 20px;">
+				    		<!-- 头像 -->
+				    		<img src="img/IMG_1568.PNG" style="width: 60px; float: left; border-radius: 50px;"/>
+				    		<div style="display: block;margin-left: 20px;float: left;margin-top: 5px;">
+				    			<span>悠嘻猴         第1楼</span>
+				    			<p style="margin-top: 5px;margin-left: 30px;">——感觉你的博客还不错。</p>
+				    		</div>
+				    	</div>
+				    	<hr style="display: block;margin-top: 25px;margin-bottom: 25px;"/>
+				    	<div class="message1" style="overflow: hidden;">
+				    		<!-- 头像 -->
+				    		<img src="img/IMG_1568.PNG" style="width: 60px; float: left; border-radius: 50px;"/>
+				    		<div style="display: block;margin-left: 20px;float: left;margin-top: 5px;">
+				    			<span>superman         第2楼</span>
+				    			<p style="margin-top: 5px;margin-left: 30px;">——I'm superman。</p>
+				    		</div>
+				    	</div>
+				    	<!-- 我要留言 -->
+				    	<div class="container" style="margin-top: 60px;">
+				    		<form class="layui-form layui-form-pane" action="">
+							  <div class="layui-form-item layui-form-text">
+							    <label class="layui-form-label">我要留言</label>
+							    <div class="layui-input-block">
+							      <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+							    </div>
+							  </div>
+							  <div class="layui-form-item">
+							    <button class="layui-btn" lay-submit="" lay-filter="demo2">留言</button>
+							  </div>
+							</form>
+				    	</div>
+				    	
     <script src="layui-v2.2.3/layui/layui.js"></script>
     <!-- 引入jquery js -->
     <script src="js/jquery-3.2.1.min.js"></script>
